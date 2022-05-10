@@ -1,2 +1,2 @@
 # leetcode
-my solutions to problems from leetcode
+my sql & python solutions to problems from leetcode
