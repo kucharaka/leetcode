@@ -1,3 +1,6 @@
 class Solution:
     def countVowelStrings(self, n: int) -> int:
         return math.comb(n + 4, 4)
+# c'[n, k] = (n+k-1)!/(k!*(n-1)) — combinations with repetition
+# we choose n chars from 5 (a, e, i, o, u) in increase order => for our formula n=k, k=5)
+# ans = (n+4)!/(n!*4!) <=> c[n+4, 4] without repetiton = n!/k!(n-k)! = (n+4)!/(4!(n)!)
