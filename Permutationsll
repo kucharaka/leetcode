@@ -1,0 +1,10 @@
+import itertools
+class Solution:
+    def permuteUnique(self, nums: List[int]) -> List[List[int]]:
+        val = nums
+        combos = []
+        com_set = itertools.permutations(val) 
+        for i in com_set:
+            if i not in combos:
+                combos.append(i)
+        return combos
